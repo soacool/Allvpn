@@ -23,7 +23,7 @@ echo -e "${NC}${LIGHT}Fuck You!!"
 exit 0
 fi
 # Link Hosting Kalian
-sstp="raw.githubusercontent.com/ibed-berto/Mantap/main/sstp"
+sstp="raw.githubusercontent.com/ibed-berto/Allvpn/main/sstp"
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 MYIP2="s/xxxxxxxxx/$MYIP/g";

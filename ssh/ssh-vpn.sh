@@ -17,13 +17,13 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 ssh="raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray"
+xray="raw.githubusercontent.com/ibed-berto/Allvpn/main/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/trojango"
+trojango="raw.githubusercontent.com/ibed-berto/Allvpn/main/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/stunnel5"
+stunnel5="raw.githubusercontent.com/ibed-berto/Allvpn/main/stunnel5"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
@@ -243,7 +243,7 @@ rm -rf /root/vnstat-2.6
 
 # install stunnel 5 
 cd /root/
-wget -q -O stunnel5.zip "https://${akbarvpnnnn}/stunnel5.zip"
+wget -q -O stunnel5.zip "https://${stunnel5}/stunnel5.zip"
 unzip -o stunnel5.zip
 cd /root/stunnel
 chmod +x configure
@@ -303,7 +303,7 @@ WantedBy=multi-user.target
 END
 
 # Service Stunnel5 /etc/init.d/stunnel5
-wget -q -O /etc/init.d/stunnel5 "https://${akbarvpnnnn}/stunnel5.init"
+wget -q -O /etc/init.d/stunnel5 "https://${stunnel5}/stunnel5.init"
 
 # Ubah Izin Akses
 chmod 600 /etc/stunnel5/stunnel5.pem
@@ -374,7 +374,7 @@ cd /usr/bin
 wget -O addhost "https://${ssh}/addhost.sh"
 wget -O slhost "https://${ssh}/slhost.sh"
 wget -O about "https://${ssh}/about.sh"
-wget -O menu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/menu.sh"
 wget -O addssh "https://${ssh}/addssh.sh"
 wget -O trialssh "https://${ssh}/trialssh.sh"
 wget -O delssh "https://${ssh}/delssh.sh"
@@ -400,49 +400,49 @@ wget -O portvlm "https://${ssh}/portvlm.sh"
 wget -O wbmn "https://${ssh}/webmin.sh"
 wget -O xp "https://${ssh}/xp.sh"
 wget -O swapkvm "https://${ssh}/swapkvm.sh"
-wget -O addvmess "https://${akbarvpnn}/addv2ray.sh"
-wget -O addvless "https://${akbarvpnn}/addvless.sh"
-wget -O addtrojan "https://${akbarvpnn}/addtrojan.sh"
-wget -O addgrpc "https://${akbarvpnn}/addgrpc.sh"
-wget -O cekgrpc "https://${akbarvpnn}/cekgrpc.sh"
-wget -O delgrpc "https://${akbarvpnn}/delgrpc.sh"
-wget -O renewgrpc "https://${akbarvpnn}/renewgrpc.sh"
-wget -O delvmess "https://${akbarvpnn}/delv2ray.sh"
-wget -O delvless "https://${akbarvpnn}/delvless.sh"
-wget -O deltrojan "https://${akbarvpnn}/deltrojan.sh"
-wget -O cekvmess "https://${akbarvpnn}/cekv2ray.sh"
-wget -O cekvless "https://${akbarvpnn}/cekvless.sh"
-wget -O cektrojan "https://${akbarvpnn}/cektrojan.sh"
-wget -O renewvmess "https://${akbarvpnn}/renewv2ray.sh"
-wget -O renewvless "https://${akbarvpnn}/renewvless.sh"
-wget -O renewtrojan "https://${akbarvpnn}/renewtrojan.sh"
-wget -O certv2ray "https://${akbarvpnn}/certv2ray.sh"
-wget -O addtrgo "https://${akbarvpnnn}/addtrgo.sh"
-wget -O deltrgo "https://${akbarvpnnn}/deltrgo.sh"
-wget -O renewtrgo "https://${akbarvpnnn}/renewtrgo.sh"
-wget -O cektrgo "https://${akbarvpnnn}/cektrgo.sh"
-wget -O portsshnontls "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/websocket/portsshnontls.sh"
-wget -O portsshws "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/websocket/portsshws.sh"
+wget -O addvmess "https://${xray}/addv2ray.sh"
+wget -O addvless "https://${xray}/addvless.sh"
+wget -O addtrojan "https://${xray}/addtrojan.sh"
+wget -O addgrpc "https://${xray}/addgrpc.sh"
+wget -O cekgrpc "https://${xray}/cekgrpc.sh"
+wget -O delgrpc "https://${xray}/delgrpc.sh"
+wget -O renewgrpc "https://${xray}/renewgrpc.sh"
+wget -O delvmess "https://${xray}/delv2ray.sh"
+wget -O delvless "https://${xray}/delvless.sh"
+wget -O deltrojan "https://${xray}/deltrojan.sh"
+wget -O cekvmess "https://${xray}/cekv2ray.sh"
+wget -O cekvless "https://${xray}/cekvless.sh"
+wget -O cektrojan "https://${xray}/cektrojan.sh"
+wget -O renewvmess "https://${xray}/renewv2ray.sh"
+wget -O renewvless "https://${xray}/renewvless.sh"
+wget -O renewtrojan "https://${xray}/renewtrojan.sh"
+wget -O certv2ray "https://${xray}/certv2ray.sh"
+wget -O addtrgo "https://${trojango}/addtrgo.sh"
+wget -O deltrgo "https://${trojango}/deltrgo.sh"
+wget -O renewtrgo "https://${trojango}/renewtrgo.sh"
+wget -O cektrgo "https://${trojango}/cektrgo.sh"
+wget -O portsshnontls "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/websocket/portsshnontls.sh"
+wget -O portsshws "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/websocket/portsshws.sh"
 
-wget -O ipsaya "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/ipsaya.sh"
-wget -O sshovpnmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/sshovpn.sh"
-wget -O l2tpmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/l2tpmenu.sh"
-wget -O pptpmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/pptpmenu.sh"
-wget -O sstpmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/sstpmenu.sh"
-wget -O wgmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/wgmenu.sh"
-wget -O ssmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/ssmenu.sh"
-wget -O ssrmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/ssrmenu.sh"
-wget -O vmessmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/vmessmenu.sh"
-wget -O vlessmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/vlessmenu.sh"
-wget -O grpcmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/grpcmenu.sh"
-wget -O grpcupdate "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/grpcupdate.sh"
-wget -O trmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/trmenu.sh"
-wget -O trgomenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/trgomenu.sh"
-wget -O setmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/setmenu.sh"
-wget -O slowdnsmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/slowdnsmenu.sh"
-wget -O running "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/running.sh"
-wget -O updatemenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/updatemenu.sh"
-wget -O sl-fix "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/sslh-fix/sl-fix"
+wget -O ipsaya "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/ipsaya.sh"
+wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/sshovpn.sh"
+wget -O l2tpmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/l2tpmenu.sh"
+wget -O pptpmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/pptpmenu.sh"
+wget -O sstpmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/sstpmenu.sh"
+wget -O wgmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/wgmenu.sh"
+wget -O ssmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/ssmenu.sh"
+wget -O ssrmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/ssrmenu.sh"
+wget -O vmessmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/vmessmenu.sh"
+wget -O vlessmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/vlessmenu.sh"
+wget -O grpcmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/grpcmenu.sh"
+wget -O grpcupdate "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/grpcupdate.sh"
+wget -O trmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/trmenu.sh"
+wget -O trgomenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/trgomenu.sh"
+wget -O setmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/setmenu.sh"
+wget -O slowdnsmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/slowdnsmenu.sh"
+wget -O running "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/running.sh"
+wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/updatemenu.sh"
+wget -O sl-fix "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/sslh-fix/sl-fix"
 
 chmod +x sl-fix
 chmod +x ipsaya

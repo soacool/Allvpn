@@ -21,7 +21,7 @@ LIGHT='\033[0;37m'
 # Link Hosting Kalian Untuk Ssh
 ssh="raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/sstp"
+sstp="raw.githubusercontent.com/ibed-berto/Allvpn/main/sstp"
 # Link Hosting Kalian Untuk Ssr
 akbarvpnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
@@ -56,8 +56,8 @@ wget https://${ssh}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 #install xray
 wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 #install ssh ovpn
-wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://${akbarvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://${ssh}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://${sstp}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 wget https://${akbarvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 wget https://${akbarvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
@@ -97,6 +97,7 @@ rm -f /root/install
 rm -f /root/sl-grpc.sh
 rm -f /root/install-sldns
 rm -f /root/install-ss-plugin.sh
+
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
@@ -110,9 +111,10 @@ RemainAfterExit=yes
 [Install]
 WantedBy=multi-user.target
 EOF
+
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://${akbarvpn}/set.sh"
+wget -O /etc/set.sh "https://${ssh}/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver

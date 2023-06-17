@@ -23,7 +23,7 @@ ssh="raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh"
 # Link Hosting Kalian Untuk Sstp
 sstp="raw.githubusercontent.com/ibed-berto/Allvpn/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssr"
+ssr="raw.githubusercontent.com/ibed-berto/Allvpn/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
 akbarvpnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
@@ -59,7 +59,7 @@ wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S x
 wget https://${ssh}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://${sstp}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://${akbarvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://${ssr}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 wget https://${akbarvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
 wget https://${akbarvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh

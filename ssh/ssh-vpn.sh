@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh"
+ssh="raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
 akbarvpnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray"
@@ -37,13 +37,13 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=infinity
-organizationalunit=infinity
+organization=rempaggrub
+organizationalunit=rempaggrub
 commonname=localhost
-email=hayuk69@gmail.com
+email=ibedberto@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://${akbarvpn}/password"
+wget -O /etc/pam.d/common-password "https://${ssh}/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -152,13 +152,13 @@ echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
 chown -R www-data:www-data /home/vps/public_html
 chmod -R g+rw /home/vps/public_html
 cd /home/vps/public_html
-wget -O /home/vps/public_html/index.html "https://${akbarvpn}/index.html1"
+wget -O /home/vps/public_html/index.html "https://${ssh}/index.html1"
 /etc/init.d/nginx restart
 cd
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://${akbarvpn}/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://${ssh}/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -328,7 +328,7 @@ systemctl restart stunnel5
 /etc/init.d/stunnel5 restart
 
 #OpenVPN
-wget https://${akbarvpn}/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://${ssh}/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -350,7 +350,7 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 #wget https://${akbarvpn}/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # Ganti Banner
-wget -O /etc/issue.net "https://${akbarvpn}/issue.net"
+wget -O /etc/issue.net "https://${ssh}/issue.net"
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -371,35 +371,35 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O addhost "https://${akbarvpn}/addhost.sh"
-wget -O slhost "https://${akbarvpn}/slhost.sh"
-wget -O about "https://${akbarvpn}/about.sh"
+wget -O addhost "https://${ssh}/addhost.sh"
+wget -O slhost "https://${ssh}/slhost.sh"
+wget -O about "https://${ssh}/about.sh"
 wget -O menu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/menu.sh"
-wget -O addssh "https://${akbarvpn}/addssh.sh"
-wget -O trialssh "https://${akbarvpn}/trialssh.sh"
-wget -O delssh "https://${akbarvpn}/delssh.sh"
-wget -O member "https://${akbarvpn}/member.sh"
-wget -O delexp "https://${akbarvpn}/delexp.sh"
-wget -O cekssh "https://${akbarvpn}/cekssh.sh"
-wget -O restart "https://${akbarvpn}/restart.sh"
-wget -O speedtest "https://${akbarvpn}/speedtest_cli.py"
-wget -O info "https://${akbarvpn}/info.sh"
-wget -O ram "https://${akbarvpn}/ram.sh"
-wget -O renewssh "https://${akbarvpn}/renewssh.sh"
-wget -O autokill "https://${akbarvpn}/autokill.sh"
-wget -O ceklim "https://${akbarvpn}/ceklim.sh"
-wget -O tendang "https://${akbarvpn}/tendang.sh"
-wget -O clearlog "https://${akbarvpn}/clearlog.sh"
-wget -O changeport "https://${akbarvpn}/changeport.sh"
-wget -O portovpn "https://${akbarvpn}/portovpn.sh"
-wget -O portwg "https://${akbarvpn}/portwg.sh"
-wget -O porttrojan "https://${akbarvpn}/porttrojan.sh"
-wget -O portsstp "https://${akbarvpn}/portsstp.sh"
-wget -O portsquid "https://${akbarvpn}/portsquid.sh"
-wget -O portvlm "https://${akbarvpn}/portvlm.sh"
-wget -O wbmn "https://${akbarvpn}/webmin.sh"
-wget -O xp "https://${akbarvpn}/xp.sh"
-wget -O swapkvm "https://${akbarvpn}/swapkvm.sh"
+wget -O addssh "https://${ssh}/addssh.sh"
+wget -O trialssh "https://${ssh}/trialssh.sh"
+wget -O delssh "https://${ssh}/delssh.sh"
+wget -O member "https://${ssh}/member.sh"
+wget -O delexp "https://${ssh}/delexp.sh"
+wget -O cekssh "https://${ssh}/cekssh.sh"
+wget -O restart "https://${ssh}/restart.sh"
+wget -O speedtest "https://${ssh}/speedtest_cli.py"
+wget -O info "https://${ssh}/info.sh"
+wget -O ram "https://${ssh}/ram.sh"
+wget -O renewssh "https://${ssh}/renewssh.sh"
+wget -O autokill "https://${ssh}/autokill.sh"
+wget -O ceklim "https://${ssh}/ceklimit.sh"
+wget -O tendang "https://${ssh}/tendang.sh"
+wget -O clearlog "https://${ssh}/clearlog.sh"
+wget -O changeport "https://${ssh}/changeport.sh"
+wget -O portovpn "https://${ssh}/portovpn.sh"
+wget -O portwg "https://${ssh}/portwg.sh"
+wget -O porttrojan "https://${ssh}/porttrojan.sh"
+wget -O portsstp "https://${ssh}/portsstp.sh"
+wget -O portsquid "https://${ssh}/portsquid.sh"
+wget -O portvlm "https://${ssh}/portvlm.sh"
+wget -O wbmn "https://${ssh}/webmin.sh"
+wget -O xp "https://${ssh}/xp.sh"
+wget -O swapkvm "https://${ssh}/swapkvm.sh"
 wget -O addvmess "https://${akbarvpnn}/addv2ray.sh"
 wget -O addvless "https://${akbarvpnn}/addvless.sh"
 wget -O addtrojan "https://${akbarvpnn}/addtrojan.sh"
@@ -483,7 +483,7 @@ chmod +x info
 chmod +x about
 chmod +x autokill
 chmod +x tendang
-chmod +x ceklim
+chmod +x ceklimit
 chmod +x ram
 chmod +x renewssh
 chmod +x clearlog

@@ -18,8 +18,8 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
-# Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh"
+# Link Hosting Kalian Untuk Ssh
+ssh="raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh"
 # Link Hosting Kalian Untuk Sstp
 akbarvpnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/sstp"
 # Link Hosting Kalian Untuk Ssr
@@ -52,7 +52,7 @@ exit 0
 fi
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
-wget https://${akbarvpn}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
+wget https://${ssh}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 #install xray
 wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 #install ssh ovpn

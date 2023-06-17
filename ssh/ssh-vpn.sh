@@ -54,6 +54,7 @@ cat > /etc/systemd/system/rc-local.service <<-END
 [Unit]
 Description=/etc/rc.local
 ConditionPathExists=/etc/rc.local
+
 [Service]
 Type=forking
 ExecStart=/etc/rc.local start
@@ -61,6 +62,7 @@ TimeoutSec=0
 StandardOutput=tty
 RemainAfterExit=yes
 SysVStartPriority=99
+
 [Install]
 WantedBy=multi-user.target
 END
@@ -444,6 +446,7 @@ wget -O running "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update
 wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/updatemenu.sh"
 wget -O sl-fix "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/sslh-fix/sl-fix"
 
+#ubah izin acces
 chmod +x sl-fix
 chmod +x ipsaya
 chmod +x sshovpnmenu
@@ -518,6 +521,8 @@ chmod +x addtrgo
 chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
+
+#auto reboot
 echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 echo "0 1 * * * root delexp" >> /etc/crontab

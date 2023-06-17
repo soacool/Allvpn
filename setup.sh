@@ -27,7 +27,7 @@ ssr="raw.githubusercontent.com/ibed-berto/Allvpn/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
 ss="raw.githubusercontent.com/ibed-berto/Allvpn/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/wireguard"
+wg="raw.githubusercontent.com/ibed-berto/Allvpn/main/wireguard"
 # Link Hosting Kalian Untuk Xray
 akbarvpnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray"
 # Link Hosting Kalian Untuk Ipsec
@@ -62,7 +62,7 @@ wget https://${sstp}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 wget https://${ssr}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 wget https://${ss}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
-wget https://${akbarvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://${wg}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install L2TP
 wget https://${akbarvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://${akbarvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh

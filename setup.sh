@@ -29,7 +29,7 @@ ss="raw.githubusercontent.com/ibed-berto/Allvpn/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
 wg="raw.githubusercontent.com/ibed-berto/Allvpn/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray"
+xray="raw.githubusercontent.com/ibed-berto/Allvpn/main/xray"
 # Link Hosting Kalian Untuk Ipsec
 akbarvpnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ipsec"
 # Link Hosting Kalian Untuk Backup
@@ -54,7 +54,7 @@ mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
 wget https://${ssh}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 #install xray
-wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
+wget https://${xray}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 #install ssh ovpn
 wget https://${ssh}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://${sstp}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh

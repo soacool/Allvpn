@@ -31,7 +31,7 @@ wg="raw.githubusercontent.com/ibed-berto/Allvpn/main/wireguard"
 # Link Hosting Kalian Untuk Xray
 xray="raw.githubusercontent.com/ibed-berto/Allvpn/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ipsec"
+ipsec="raw.githubusercontent.com/ibed-berto/Allvpn/main/ipsec"
 # Link Hosting Kalian Untuk Backup
 akbarvpnnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/backup"
 # Link Hosting Kalian Untuk Websocket
@@ -64,7 +64,7 @@ wget https://${ss}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.s
 #installwg
 wget https://${wg}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install L2TP
-wget https://${akbarvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://${ipsec}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://${akbarvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Websocket
 wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh

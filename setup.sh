@@ -35,7 +35,7 @@ ipsec="raw.githubusercontent.com/ibed-berto/Allvpn/main/ipsec"
 # Link Hosting Kalian Untuk Backup
 backup="raw.githubusercontent.com/ibed-berto/Allvpn/main/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/websocket"
+ws="raw.githubusercontent.com/ibed-berto/Allvpn/main/websocket"
 # Link Hosting Kalian Untuk Ohp
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ohp"
 
@@ -67,7 +67,7 @@ wget https://${wg}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 wget https://${ipsec}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://${backup}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Websocket
-wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
+wget https://${ws}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
 wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install SlowDNS

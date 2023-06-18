@@ -10,7 +10,7 @@ rm nsdomain
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
 DOMAIN=ibedberto.my.id
-SUB_DOMAIN=onichan-${sub}.ibedberto.my.id
+SUB_DOMAIN=vpn-${sub}.ibedberto.my.id
 NS_DOMAIN=slowdns-${subsl}.ibedberto.my.id
 CF_ID=ibedberto@gmail.com
 CF_KEY=868cda5cb031d916bc9cf91a0ae92949eeb5a

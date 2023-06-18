@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -qO- -O /etc/ssh/sshd_config raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh/sshd_config;
+wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh/sshd_config;
 systemctl restart sshd;
 clear;
 

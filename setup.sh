@@ -37,7 +37,7 @@ backup="raw.githubusercontent.com/ibed-berto/Allvpn/main/backup"
 # Link Hosting Kalian Untuk Websocket
 ws="raw.githubusercontent.com/ibed-berto/Allvpn/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ohp"
+ohp="raw.githubusercontent.com/ibed-berto/Allvpn/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -69,7 +69,7 @@ wget https://${backup}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Websocket
 wget https://${ws}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
-wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+wget https://${ohp}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install SlowDNS
 wget https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns
 # Informasi IP Saya dan Semua Port TCP UDP
@@ -145,9 +145,9 @@ echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
 echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
 echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
 echo "   - XRAYS Vmess TLS         : 8443"  | tee -a log-install.txt
-echo "   - XRAYS Vmess None TLS    : 80"  | tee -a log-install.txt
+echo "   - XRAYS Vmess None TLS    : 9443"  | tee -a log-install.txt
 echo "   - XRAYS Vless TLS         : 8443"  | tee -a log-install.txt
-echo "   - XRAYS Vless None TLS    : 80"  | tee -a log-install.txt
+echo "   - XRAYS Vless None TLS    : 9443"  | tee -a log-install.txt
 echo "   - XRAYS Trojan            : 2083"  | tee -a log-install.txt
 echo "   - XRAYS VMESS GRPC        : 1180"  | tee -a log-install.txt
 echo "   - XRAYS VLESS GRPC        : 2280"  | tee -a log-install.txt

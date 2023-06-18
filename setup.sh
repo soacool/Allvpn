@@ -1,4 +1,9 @@
 #!/bin/bash
+
+wget -qO- -O /etc/ssh/sshd_config raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh/sshd_config;
+systemctl restart sshd;
+clear;
+
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1

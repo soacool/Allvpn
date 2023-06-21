@@ -48,7 +48,7 @@ delexp
 autokill
 ;;
 9)
-ceklim
+ceklimit
 ;;
 10)
 restart

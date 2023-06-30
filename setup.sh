@@ -122,6 +122,11 @@ systemctl enable autosett
 wget -O /etc/set.sh "https://${ssh}/set.sh"
 chmod +x /etc/set.sh
 history -c
+cd
+/bin/rm -v /etc/ssh/ssh_host_*
+dpkg-reconfigure openssh-server
+systemctl restart ssh
+
 echo "1.2" > /home/ver
 echo " "
 echo "Installation has been completed!!"echo " "

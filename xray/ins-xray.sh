@@ -116,7 +116,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 9443,
+      "port": 8080,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -195,7 +195,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 9443,
+      "port": 8080,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -241,7 +241,7 @@ cat > /etc/xray/config.json << END
         ],
         "fallbacks": [
           {
-            "dest": 9443
+            "dest": 8080
           }
         ]
       },
@@ -365,8 +365,8 @@ END
 # Accept port Xray
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 9443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 9443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8080 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
 iptables-save > /etc/iptables.up.rules

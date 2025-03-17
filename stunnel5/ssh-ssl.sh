@@ -35,12 +35,12 @@ ver=$VERSION_ID
 
 #detail nama perusahaan
 country=ID
-state=Indonesia
-locality=Indonesia
-organization=rempaggrub
-organizationalunit=rempaggrub
-commonname=rempaggrub
-email=ibedberto@gmail.com
+state=Germany
+locality=Frankfurt
+organization=stts
+organizationalunit=stts
+commonname=stts
+email=soariziky201@gmail.com
 
 cd
 
